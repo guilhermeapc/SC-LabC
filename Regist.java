@@ -25,7 +25,7 @@ System.out.println("Registration Page");
                 {
                 Scanner z = null;
                 try{
-                z = new Scanner(new File("C:\\Users\\فاطمة\\Downloads\\accounts.txt"));
+                z = new Scanner(new File("/net/areas/homes/up201709560/Desktop/SC LabC/Users.txt"));
                 boolean checkname = false;
                 while(z.hasNext())
                 {
@@ -40,7 +40,7 @@ System.out.println("Registration Page");
                 {
                 Formatter x = null;
                 try{
-                FileWriter f = new FileWriter("C:\\Users\\فاطمة\\Downloads\\accounts.txt", true);
+                FileWriter f = new FileWriter("/net/areas/homes/up201709560/Desktop/SC LabC/Users.txt", true);
                 x = new Formatter(f);
                 x.format("%s %s%n",user.toUpperCase(),pass);
                 System.out.println("You registered succesfully");
